@@ -1,5 +1,7 @@
 ﻿# Cleaning UCI Human Activity data
 
+**The data Codebook is in the file codebook.txt**
+
 ## Preparing the environment
 **Importing the libraries**
 We need to import the dplyr library in order to summarize the data at the end.
@@ -89,5 +91,5 @@ We group the tidy dataset [dataset] by the *Subject* and *Activity* variables. T
 
 We can alse save the new dataset in a new file.
 
-    enter code here
+    write.table(x = avg_dataset, file = "avg_dataset.txt", row.names = FALSE)
 
